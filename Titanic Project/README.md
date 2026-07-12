@@ -6,7 +6,7 @@ A streamlined Python project that cleans the classic Titanic passenger dataset a
 
 | 1. Class Distribution | 2. Family Impact | 3. Port Connections |
 | :---: | :---: | :---: |
-| ![Class Divide](class_discrimination.png) | ![Family Size](family.png) | ![Port Analysis](3_port_dependence.png) |
+| ![Class Divide](class_discrimination.png) | ![Family Size](family.png) | ![Port Analysis](port_dependence.png) |
 
 ---
 
