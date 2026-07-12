@@ -1,4 +1,5 @@
 # 🚢 Titanic Data Analysis
+![Titanic](titanic-image.png)
 
 A streamlined Python project that cleans the classic Titanic passenger dataset and automates the creation of key demographic survival charts.
 
