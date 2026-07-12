@@ -1,28 +1,53 @@
-# 🚢 Titanic: Data Analysis & Machine Learning
+# 🚢 Titanic Data Analysis
 
-## 📖 Project Overview
-This project analyzes passenger demographics from the tragic 1912 Titanic sinking to uncover patterns influencing survival rates. 
+A streamlined Python project that cleans the classic Titanic passenger dataset and automates the creation of key demographic survival charts.
 
-* **Data Source:** [Kaggle's Titanic Competition](https://kaggle.com)
-* **Goal:** Ingest passenger records, clean missing values, and visualize survival outcomes based on class, age, and gender.
+## 📊 Visual Insights
 
-## 📊 Dataset Reference (`train.csv`)
-* **PassengerId / Name / Ticket / Cabin:** Passenger identifiers.
-* **Survived:** Survival indicator (`0` = No, `1` = Yes).
-* **Pclass:** Ticket class (`1` = 1st, `2` = 2nd, `3` = 3rd).
-* **Sex / Age:** Demographics.
-* **SibSp / Parch:** Count of family members aboard (siblings/spouses/parents/children).
-* **Fare:** Price paid for the ticket.
-* **Embarked:** Port of boarding (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton).
+| 1. Class Distribution | 2. Family Impact | 3. Port Connections |
+| :---: | :---: | :---: |
+| ![Class Divide](class_discrimination.png) | ![Family Size](family.png) | ![Port Analysis](3_port_dependence.png) |
 
-## 🛠️ Tech Stack & Workflow
-* **Python 3**: Core script logic.
-* **Pandas**: Structural data cleaning, filtering, and handling missing null values.
-* **Matplotlib**: Generating distribution charts (Survival vs. Non-Survival distribution).
+---
 
-## 📁 Repository Structure
-* `Titanic/`
-  * `README.md` — Project documentation.
-  * `titanic_analysis.py` — Python script containing cleaning and plotting logic.
-  * `train.csv` — Passenger dataset.
+## 💾 Data Pipeline
+
+*   **Source Data**: Uses the official `train.csv` downloaded directly from the [Kaggle Titanic Competition](https://kaggle.com).
+*   **Cleaned Output**: Cleans missing values, handles data types, and exports a fully processed production file to `titanic_cleaned_data.xlsx`.
+
+---
+
+## 🛠️ Built With
+
+- **Pandas & NumPy**: For efficient data wrangling and numerical processing.
+- **Openpyxl**: For exporting structured data into Excel format.
+- **Matplotlib & Pillow**: For rendering and saving clean data visualizations.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Set Up Environment
+Activate your virtual environment and install the required dependencies:
+
+```bash
+# Activate venv (Windows)
+.\venv\Scripts\activate
+
+# Install requirements
+pip install pandas openpyxl matplotlib pillow numpy
+```
+
+### 2. Run the Analysis
+Execute the script to clean the raw data and refresh all three graphs:
+
+```bash
+python titanic_analysis.py
+```
+
+## 📂 Project Structure
+- `train.csv` — Raw Kaggle training data.
+- `titanic_cleaned_data.xlsx` — Final processed and cleaned Excel file.
+- `titanic_analysis.py` — Core Python data execution pipeline.
+
 
