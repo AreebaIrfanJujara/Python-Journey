@@ -1,28 +1,28 @@
+# 🚢 Titanic: Data Analysis & Machine Learning
 
-# Titanic Data Analysis
+## 📖 Project Overview
+This project analyzes passenger demographics from the tragic 1912 Titanic sinking to uncover patterns influencing survival rates. 
 
-A data exploration project focused on cleaning historical passenger data and visualizing survival outcomes using Python.
+* **Data Source:** [Kaggle's Titanic Competition](https://kaggle.com)
+* **Goal:** Ingest passenger records, clean missing values, and visualize survival outcomes based on class, age, and gender.
 
-## 📊 Overview
-This project analyzes the demographics and survival rates of passengers aboard the Titanic. The goal is to ingest raw passenger records, handle missing information, and generate visual insights regarding survival distributions.
+## 📊 Dataset Reference (`train.csv`)
+* **PassengerId / Name / Ticket / Cabin:** Passenger identifiers.
+* **Survived:** Survival indicator (`0` = No, `1` = Yes).
+* **Pclass:** Ticket class (`1` = 1st, `2` = 2nd, `3` = 3rd).
+* **Sex / Age:** Demographics.
+* **SibSp / Parch:** Count of family members aboard (siblings/spouses/parents/children).
+* **Fare:** Price paid for the ticket.
+* **Embarked:** Port of boarding (`C` = Cherbourg, `Q` = Queenstown, `S` = Southampton).
 
-## 🛠️ Tech Stack & Libraries Used
-* **Python 3** - Core scripting logic
-* **Pandas** - Data ingestion, handling missing values, and structural data cleaning
-* **Matplotlib** - Generating data visualizations and distribution charts
-
-## 🧼 Data Cleaning Process
-Before analyzing the results, the dataset is processed to ensure accuracy:
-1. **Handling Missing Values:** Dropping or imputing critical columns with null values (such as Passenger Age or Cabin designations).
-2. **Data Filtering:** Isolating key features including passenger status, age, gender, and survival indicators.
-3. **Data Structuring:** Formatting categories for optimal plotting efficiency.
-
-## 📈 Visualizations
-The main analysis produces visualizations to contrast outcomes directly:
-* **Survival vs. Non-Survival Distribution:** A bar/pie chart generated via Matplotlib displaying the exact count and proportions of survivors against those who perished.
+## 🛠️ Tech Stack & Workflow
+* **Python 3**: Core script logic.
+* **Pandas**: Structural data cleaning, filtering, and handling missing null values.
+* **Matplotlib**: Generating distribution charts (Survival vs. Non-Survival distribution).
 
 ## 📁 Repository Structure
-* `Titanic-Data-Analysis/`
-  * `README.md` — Project documentation and summary.
-  * `titanic_analysis.py` — The core script containing data manipulation and plotting code.
-  * `train.csv` — The underlying passenger dataset.
+* `Titanic/`
+  * `README.md` — Project documentation.
+  * `titanic_analysis.py` — Python script containing cleaning and plotting logic.
+  * `train.csv` — Passenger dataset.
+
